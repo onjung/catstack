@@ -1,0 +1,84 @@
+<!-- Created by On Jung -->
+
+<html>
+	<head>
+		<title>CosmoCat!</title>
+		<script type="text/javascript" src="src/catstack.js"></script>
+		<style type="text/css">
+			body {
+				background-image: url(res/bg.png);
+				margin: 0px;
+				background-repeat:no-repeat;
+				color: #FFFFFF;
+				font-size: 10pt;
+			}
+		</style>
+	</head>
+	<body onmousemove="updateMouseCoordinates(event)"> 
+		<div>
+			<span id="counter">Steps 0</span>
+			<span id="time">Time 0:00</span>
+				<form action="">
+				<span>Select Number of Cats:</span>
+				<select name="num" id="numcat">
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>						
+					<option value="7">7</option>
+					<option value="8">8</option>
+				</select>
+				<input type="button" value="Restart" onclick="restart()"></input>
+			</form>
+			<span id="msg" style="color: white; font: 12pt"></span>
+			<img 
+				src="res/cat1.png" 
+				id="cat1" 
+				style="position: absolute; top: 110px; left: 80px;"
+				onClick="firstClick=!firstClick; setIdPic('cat1');">
+			</img>
+			<img 
+				src="res/cat2.png" 
+				id="cat2" 
+				style="position: absolute; top: 135px; left: 75px;"
+				onclick="firstClick=!firstClick; setIdPic('cat2');">
+			</img>
+			<img
+				src="res/cat3.png"
+				id="cat3"
+				style="position: absolute; top: 155px; left: 70px;"
+				onclick="firstClick=!firstClick; setIdPic('cat3');">
+			</img>
+			<img
+				src="res/cat4.png"
+				id="cat4"
+				style="position: absolute; top: 175px; left: 65px;"
+				onclick="firstClick=!firstClick; setIdPic('cat4');">
+			</img>
+			<img
+				src="res/cat5.png"
+				id="cat5"
+				style="position: absolute; top: 195px; left: 60px;"
+				onclick="firstClick=!firstClick; setIdPic('cat5');">
+			</img>
+			<img
+				src="res/cat6.png"
+				id="cat6"
+				style="position: absolute; top: 215px; left: 55px;"
+				onclick="firstClick=!firstClick; setIdPic('cat6');">
+			</img>
+			<img
+				src="res/cat7.png"
+				id="cat7"
+				style="position: absolute; top: 235px; left: 50px;"
+				onclick="firstClick=!firstClick; setIdPic('cat7');">
+			</img>
+			<img
+				src="res/cat8.png"
+				id="cat8"
+				style="position: absolute; top: 255px; left: 45px;"
+				onclick="firstClick=!firstClick; setIdPic('cat8');">
+			</img>
+		</div>
+	</body>
+</html>	
